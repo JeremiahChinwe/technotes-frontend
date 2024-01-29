@@ -3,7 +3,7 @@ import { setCredentials } from "../../features/auth/authSlice"
 
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "https://technotes-restapi.vercel.app",
+    baseUrl: "https://technotes-restapi.onrender.com",
     credentials: "include",
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
